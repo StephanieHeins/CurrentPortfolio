@@ -1,9 +1,11 @@
 import React from 'react';
+import dog from '../../images/dog.jpeg';
 
 export default function About() {
   return (
     <div>
       <h1>About Page</h1>
+      <img src={dog}/>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
