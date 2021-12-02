@@ -57,14 +57,14 @@ function Contact() {
 
       <div className="container">
 
-      <div class="columns my-5">
+      <div class="columns my-4">
         <div class="row justify-content-center">
           <div class="col-sm">
           </div>
 
           <div class="col-6">
             <div className="text-center">
-              <div className="my-3 h4">
+              <div className="mb-3 h4">
                 <a className="text-info" href="https://github.com/StephanieHeins">Github</a>
               </div>
               <div className="mt-3 mb-4 h4">
@@ -97,14 +97,14 @@ function Contact() {
             <div class="row justify-content-center my-4">
               <button 
                 type="submit" 
-                class="btn btn-dark"
+                class="btn btn-dark text-info"
                 style={{width:100}}
                 >Submit
                 </button>
             </div>
           </form>
           </div>
-          
+
           <div class="col-sm">
           </div>
         </div>

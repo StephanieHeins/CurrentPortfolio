@@ -9,14 +9,14 @@ export default function About() {
       <div className="row">
         <div className="col-md">
           <img 
-            className="img-responsive rounded center-block d-block mx-auto"
+            className="img-responsive rounded center-block d-block mx-auto rounded-circle"
             style={{width: 350}}
             src={Headshot1}
             alt="Headshot"
             />
         </div>
         <div className="col-md">
-          <div className="card">
+          <div className="card border border-dark rounded">
             <div className="card-title py-4 px-4 h4 bg-dark text-info">
               Stephanie Heins
             </div>

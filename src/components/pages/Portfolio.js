@@ -52,7 +52,7 @@ export default function Portfolio() {
 <div className="container">
     <div className="row justify-content-center">
       <div 
-        class="card my-5"
+        class="card my-5 border border-dark rounded"
         style={{width: 500}}
       >
       <div class="card-body">
@@ -65,9 +65,10 @@ export default function Portfolio() {
         src={project.image}
         alt="dog"
       />
-      <div class="card-body text-center bg-dark">
-        <a href={project.livelink} class="card-link text-info">Live Link</a>
-        <a href={project.repo} class="card-link text-info">Github Repo</a>
+
+      <div class="card-body text-center">
+        <a href={project.livelink} class="btn btn-dark text-info mx-3" style={{width:180}}>Live Link</a>
+        <a href={project.repo} class="btn btn-dark text-info mx-3" style={{width:180}}>Github Repo</a>
       </div>
     </div>
   </div>
