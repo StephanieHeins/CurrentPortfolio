@@ -54,6 +54,64 @@ function Contact() {
 
   return (
     <div>
+
+      <div className="container">
+
+      <div class="columns my-5">
+        <div class="row justify-content-center">
+          <div class="col-sm">
+          </div>
+
+          <div class="col-6">
+            <div className="text-center">
+              <div className="my-3 h4">
+                <a className="text-info" href="https://github.com/StephanieHeins">Github</a>
+              </div>
+              <div className="mt-3 mb-4 h4">
+                <a className="text-info" href="https://www.linkedin.com/in/stephanieheins/">LinkedIn</a>
+              </div>
+              <div className="h5">
+                Email Directly:
+              </div>
+            </div>
+            
+          <form className="my-2">
+            <div class="form-group">
+              <label for="exampleInputPassword1">Name</label>
+              <input 
+                type="password" 
+                class="form-control mb-3" 
+                id="exampleInputPassword1" 
+                placeholder="First Last" />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input 
+                type="email" 
+                class="form-control" 
+                id="exampleInputEmail1" 
+                aria-describedby="emailHelp" 
+                placeholder="Example@email.com" />
+            </div>
+
+            <div class="row justify-content-center my-4">
+              <button 
+                type="submit" 
+                class="btn btn-dark"
+                style={{width:100}}
+                >Submit
+                </button>
+            </div>
+          </form>
+          </div>
+          
+          <div class="col-sm">
+          </div>
+        </div>
+      </div>
+      </div>
+
+
       <p>Hello {userName}</p>
       <form className="form">
         <input
