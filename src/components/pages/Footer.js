@@ -5,7 +5,7 @@ export default function Footer() {
      <div>
         <footer class="page-footer font-small text-info bg-dark bg-gradient mt-5">
             <div class="footer-copyright text-center py-3">
-                © 2020 Copyright
+                © 2021 Copyright
             </div>
         </footer>
 

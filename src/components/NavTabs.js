@@ -16,6 +16,9 @@ function NavTabs({ currentPage, handlePageChange }) {
           Home
         </a>
       </li> */}
+      <li className="navbar-brand text-info mx-4">
+          Stephanie Heins
+      </li>
       <li className="nav-item">
         <a
           href="#about"
@@ -36,6 +39,17 @@ function NavTabs({ currentPage, handlePageChange }) {
           style={{color:'#5CBCDE'}}
         >
           Portfolio
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+          // Check to see if the currentPage is `Resume`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          style={{color:'#5CBCDE'}}
+        >
+          Resume
         </a>
       </li>
       <li className="nav-item">
