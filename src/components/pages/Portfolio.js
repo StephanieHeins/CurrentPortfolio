@@ -5,6 +5,7 @@ import TechBlog from "../../images/TechBlog.png";
 import CovidCC from "../../images/CovidCC.png";
 import TeamProfile from "../../images/TeamProfile.png";
 import EmployeeTracker from "../../images/EmployeeTracker.png";
+import WhereToMovie from "../../images/WhereToMovie.png";
 
 export default function Portfolio() {
   const projects = [
@@ -14,6 +15,13 @@ export default function Portfolio() {
       repo: "https://github.com/StephanieHeins/DonutShop",
       image: DonutShop,
       about: "MERN Stack project to create a storefront for a local donut shop. Users are able to browse products by category, add items to their cart, and pay online."
+    },
+    {
+      name: "WhereToMovie",
+      livelink: "https://wheretomovie.herokuapp.com/",
+      repo: "https://github.com/egraham96/Where-to-Watch",
+      image: WhereToMovie,
+      about: "Full stack web application utilizing MySQL and Handlebars.js, where users can search for a movie and find where it is being streamed. They can also create an account and add movies to their Watchlist."
     },
     {
       name: "TechBlog",

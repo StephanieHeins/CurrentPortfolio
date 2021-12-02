@@ -32,19 +32,25 @@ function Contact() {
     e.preventDefault();
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage('Email or username is invalid');
+    if (!userName) {
+      setErrorMessage('Please enter your name.');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
-    if (!checkPassword(password)) {
+    if (!validateEmail(email)) {
+      setErrorMessage('Please enter a valid email.');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    if (password.length<8) {
       setErrorMessage(
-        `Choose a more secure password for the account: ${userName}`
+        `Message must be more than 8 characters.`
       );
       return;
     }
-    alert(`Hello ${userName}`);
+    alert(`Thank you!`);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');
@@ -79,7 +85,9 @@ function Contact() {
             <div class="form-group">
               <label for="exampleInputPassword1">Name</label>
               <input 
-                type="password" 
+                value={userName}
+                name="userName"
+                onChange={handleInputChange}
                 class="form-control mb-3" 
                 id="exampleInputPassword1" 
                 placeholder="First Last" />
@@ -88,14 +96,28 @@ function Contact() {
               <label for="exampleInputEmail1">Email</label>
               <input 
                 type="email" 
-                class="form-control" 
+                value={email}
+                name="email"
+                class="form-control mb-3" 
+                onChange={handleInputChange}
                 id="exampleInputEmail1" 
                 aria-describedby="emailHelp" 
                 placeholder="Example@email.com" />
             </div>
-
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea 
+                value={password}
+                name="password"
+                onChange={handleInputChange}
+                class="form-control" 
+                id="exampleFormControlTextarea1" 
+                rows="3"
+                placeholder="I have a question about one of your projects..." />
+            </div>
             <div class="row justify-content-center my-4">
               <button 
+                onClick={handleFormSubmit}
                 type="submit" 
                 class="btn btn-dark text-info"
                 style={{width:100}}
@@ -111,32 +133,6 @@ function Contact() {
       </div>
       </div>
 
-
-      <p>Hello {userName}</p>
-      <form className="form">
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={userName}
-          name="userName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="username"
-        />
-        <input
-          value={password}
-          name="password"
-          onChange={handleInputChange}
-          type="password"
-          placeholder="Password"
-        />
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
-      </form>
       {errorMessage && (
         <div>
           <p className="error-text">{errorMessage}</p>

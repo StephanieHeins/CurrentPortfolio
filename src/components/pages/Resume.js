@@ -1,13 +1,13 @@
 import React from 'react';
+import HeinsResume from '../../images/HeinsResume.pdf'
 
 export default function Home() {
   return (
     <div>
-            
         <div class="columns my-4">
             <div class="row justify-content-center">
-                <div class="col-sm">
-                </div>
+
+                <div class="col-sm"></div>
 
                 <div class="col-8">
                     <div style={{fontWeight:'800'}} className="h4 my-3">
@@ -90,11 +90,23 @@ export default function Home() {
                     </div>  
                 </div>
 
-            <div class="col-sm">
-          </div>
-        </div>
-      </div>
+                <div class="col-sm"></div>
 
+            </div>
+        </div>
+
+        <div class="columns my-4">
+            <div class="row justify-content-center my-4">
+                <a
+                    href={HeinsResume} 
+                    class="btn btn-dark text-info"
+                    style={{width:200}}
+                    download
+                    >Download PDF
+                </a>
+            </div>
+        </div>
     </div>
+
     );
 }
