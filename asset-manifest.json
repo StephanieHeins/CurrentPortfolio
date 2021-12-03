@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/current-portfolio/static/js/main.95460091.chunk.js",
-    "main.js.map": "/current-portfolio/static/js/main.95460091.chunk.js.map",
+    "main.js": "/current-portfolio/static/js/main.ab36ef59.chunk.js",
+    "main.js.map": "/current-portfolio/static/js/main.ab36ef59.chunk.js.map",
     "runtime-main.js": "/current-portfolio/static/js/runtime-main.4c10da53.js",
     "runtime-main.js.map": "/current-portfolio/static/js/runtime-main.4c10da53.js.map",
     "static/css/2.383c0125.chunk.css": "/current-portfolio/static/css/2.383c0125.chunk.css",
@@ -10,12 +10,20 @@
     "index.html": "/current-portfolio/index.html",
     "static/css/2.383c0125.chunk.css.map": "/current-portfolio/static/css/2.383c0125.chunk.css.map",
     "static/js/2.5495afbf.chunk.js.LICENSE.txt": "/current-portfolio/static/js/2.5495afbf.chunk.js.LICENSE.txt",
+    "static/media/CovidCC.c4c73b13.png": "/current-portfolio/static/media/CovidCC.c4c73b13.png",
+    "static/media/DonutShop.77884eb3.png": "/current-portfolio/static/media/DonutShop.77884eb3.png",
+    "static/media/EmployeeTracker.e970eef8.png": "/current-portfolio/static/media/EmployeeTracker.e970eef8.png",
+    "static/media/Headshot1.14c72164.jpg": "/current-portfolio/static/media/Headshot1.14c72164.jpg",
+    "static/media/HeinsResume.07214a02.pdf": "/current-portfolio/static/media/HeinsResume.07214a02.pdf",
+    "static/media/TeamProfile.92dd3790.png": "/current-portfolio/static/media/TeamProfile.92dd3790.png",
+    "static/media/TechBlog.556e557b.png": "/current-portfolio/static/media/TechBlog.556e557b.png",
+    "static/media/WhereToMovie.b1eef881.png": "/current-portfolio/static/media/WhereToMovie.b1eef881.png",
     "static/media/dog.923fefdc.jpeg": "/current-portfolio/static/media/dog.923fefdc.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.4c10da53.js",
     "static/css/2.383c0125.chunk.css",
     "static/js/2.5495afbf.chunk.js",
-    "static/js/main.95460091.chunk.js"
+    "static/js/main.ab36ef59.chunk.js"
   ]
 }
