@@ -13,7 +13,7 @@ Professional portfolio to showcase my projects and skills.
 
 ## Links 
 
-* [LiveLink]()
+* [LiveLink](https://stephanieheins.github.io/current-portfolio/)
 * Local: See [Usage](#Usage) for local setup instructions 
 
 ## Technologies
